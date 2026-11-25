@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md Mehedi Hasan | Contact</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar">
+            <a href="./index.html" class="logo"><b>M@HEDI</b></a>
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./projects.html">Projects</a></li>
+                <li><a href="./contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container">
+            <h1>Contact <span class="highlight">Me</span></h1>
+            <p class="sub-text">Feel free to reach out for project discussions, academic queries, or collaboration</p>
+
+            <div class="skills-row">
+                <div class="skill">
+                    <h3>Contact Details</h3>
+                    <ul>
+                        <li><b>Name:</b> Md Mehedi Hasan</li>
+                        <li><b>Email:</b> <a href="mailto:mehedi.birat@gmail.com">mehedi.birat@gmail.com</a></li>
+                        <li><b>Phone / WhatsApp:</b> +8801727-393466</li>
+                        <li><b>Address:</b> DSC, Birulia, Savar, Dhaka-1216</li>
+                        <li><b>Facebook:</b> <a href="https://www.facebook.com/mehedi.birat/">facebook.com/mehedi.birat</a></li>
+                        <li><b>Resume:</b> <a href="./resume.pdf">View Resume (PDF)</a></li>
+                    </ul>
+                </div>
+
+                <div class="skill">
+                    <h3>Send a Message</h3>
+                    <form id="contactForm" novalidate>
+                        <label for="fullName">Full Name *</label>
+                        <input type="text" id="fullName" name="fullName" placeholder="Enter your full name">
+                        <span class="error" id="nameError"></span>
+
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email address">
+                        <span class="error" id="emailError"></span>
+
+                        <label for="subject">Select Topic *</label>
+                        <select id="subject" name="subject">
+                            <option value="">Choose a subject</option>
+                            <option value="Project Discussion">Project Discussion</option>
+                            <option value="Academic Collaboration">Academic Collaboration</option>
+                            <option value="General Inquiry">General Inquiry</option>
+                        </select>
+                        <span class="error" id="subjectError"></span>
+
+                        <label>Preferred Reply Method:</label>
+                        <div class="inline">
+                            <label><input type="radio" name="replyMethod" value="Email" checked> Email</label>
+                            <label><input type="radio" name="replyMethod" value="Phone"> Phone</label>
+                            <label><input type="radio" name="replyMethod" value="WhatsApp"> WhatsApp</label>
+                        </div>
+
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Write your message here..."></textarea>
+                        <span class="error" id="messageError"></span>
+
+                        <div class="inline">
+                            <label><input type="checkbox" id="agreeCheck"> I confirm that the information above is accurate.</label>
+                        </div>
+                        <span class="error" id="checkError"></span>
+
+                        <button type="submit" class="btn">Send Message</button>
+                        <p id="successMsg"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Mehedi Hasan. All Rights Reserved.</p>
+        <div class="hero-buttons">
+            <a href="https://www.facebook.com/mehedi.birat/" class="btn">Facebook</a>
+            <a href="./resume.pdf" class="btn">View Resume</a>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+
+</body>
+</html>
